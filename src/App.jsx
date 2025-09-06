@@ -6,8 +6,9 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Eventos / Tela de login </h1>
+      <h1>Tela de login </h1>
       <Form/>
+      <Eventos/>
     </div>
   )
 }
