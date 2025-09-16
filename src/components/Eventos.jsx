@@ -1,19 +1,19 @@
-import { useState } from "react"
-function Eventos (){
+import Button from "./evento/Button"
+function Eventos(){
 
-const [img, setImage] = useState("./public/Resident Evil.png")
-
-const changeImage = () => {
-    setImage("./public/Advent Group.png")
-    
+function primeiroEvento (){
+    console.log("Primeiro Disparo Ativado!!!")
 }
- 
+function segundoEvento (){
+    console.log("Segundo Disparo Ativado!!!")
+}
     return(
-        <div>
-            <img src={img} alt="Resident_Evil" width={700}/>
-            <p>Mudar Imagem de fundo</p>
-            <button onClick={changeImage}>Mudar</button>
-        </div>
+        <>
+            <p>Clique para disparar um Evento</p>
+            <Button event ={primeiroEvento} text="Primeiro Disparo do Evento"/>
+            <Button event ={segundoEvento} text="Segundo Disparo do Evento"/>
+        </>
     )
+    
 }
 export default Eventos

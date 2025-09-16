@@ -18,9 +18,7 @@ function Form() {
                 <div>
                     <label htmlFor="name">Nome: </label>
                     <input type="text" 
-                    id="name" 
-                    name="name" 
-                    placeholder="Digite o seu nome"
+                    id="name" name="name" placeholder="Digite o seu nome"
                     onChange={(event) => setName(event.target.value)}
                     />
                 </div>
@@ -28,8 +26,7 @@ function Form() {
                 <div>
                     <label htmlfor="password">Senha: </label>
                     <input type="password" 
-                    id="password" 
-                    name="password" 
+                    id="password" name="password" 
                     placeholder="Digite sua senha"
                     onChange={(event) => setPassword(event.target.value)}
                     />
